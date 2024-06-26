@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Generate a <br>
+            <span>random password</span>
+        </h1>
+        <p>Never use an insecure password again.</p>
+        <button id="generate-el">Generate password</button>
+        <hr class="line">
+        <div class="button-container" id="buttonCont">
+            <button id="pass-el" ></button>
+        </div>
+         <script>
+            const passButton = document.getElementById('pass-el');
+            if (!passButton.textContent.trim()) { 
+                passButton.remove();
+            }
+        </script>
+        <script src="index.js"></script>
+    </body>
+</html>
